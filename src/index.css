@@ -126,3 +126,6 @@
     background-clip: text;
   }
 }
+.text-foreground {
+    color: #5e7392;
+}
