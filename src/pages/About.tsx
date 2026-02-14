@@ -126,23 +126,25 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="hero-overlay section-padding">
-        <div className="container-main text-center">
-          <ScrollReveal>
-            <h2 className="text-3xl font-bold text-primary-foreground md:text-4xl">
-              Ready to Start Your Project?
-            </h2>
-            <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-              Let's discuss how we can help your business grow.
-            </p>
-            <Link
-              to="/contact"
-              className="mt-8 inline-block rounded-lg bg-accent px-8 py-3.5 text-sm font-semibold text-accent-foreground transition-all hover:opacity-90"
-            >
-              Contact Us
-            </Link>
-          </ScrollReveal>
+     {/* CTA */}
+      <section className="px-4 pt-16 pb-20 md:px-8 md:pt-24 md:pb-28 lg:px-16">
+        <div className="container-main">
+          <div className="hero-overlay rounded-[15px] px-8 py-16 md:px-16 md:py-24 text-center">
+            <ScrollReveal>
+              <h2 className="text-3xl font-bold text-primary-foreground md:text-4xl">
+                Let's Build Something Amazing Together
+              </h2>
+              <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
+                Ready to take your digital presence to the next level? Let's talk.
+              </p>
+              <Link
+                to="/contact"
+                className="mt-8 inline-block rounded-lg bg-accent px-8 py-3.5 text-sm font-semibold text-accent-foreground transition-all hover:opacity-90"
+              >
+                Contact Us
+              </Link>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
     </main>
