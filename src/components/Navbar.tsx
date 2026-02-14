@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       <div className="container-main flex h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="ServiceCare" className="h-10 w-auto" />
+          <img src={logo} alt="ServiceCare" className="h-14 w-auto" />
         </Link>
 
         {/* Desktop */}
