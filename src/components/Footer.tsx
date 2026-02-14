@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo & About */}
           <div>
-            <img src={logo} alt="ServiceCare" className="h-10 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="ServiceCare" className="h-14 w-auto mb-4 invert" />
             <p className="text-sm leading-relaxed opacity-80">
               We help brands grow with powerful digital marketing strategies, web solutions, and creative services.
             </p>
@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 border-t border-primary-foreground/10 pt-8 text-center text-sm opacity-60">
-          © {new Date().getFullYear()} ServiceCare. All rights reserved.
+          © {new Date().getFullYear()} All rights reserved.
         </div>
       </div>
     </footer>
