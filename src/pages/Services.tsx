@@ -11,36 +11,42 @@ import serviceShopify from "@/assets/service-shopify.jpg";
 const services = [
   {
     title: "Web Development",
+    slug: "web-development",
     image: serviceWeb,
     description: "We build high-performance, responsive websites and web applications using modern technologies. Our development process focuses on user experience, speed, and scalability to ensure your digital presence drives results.",
     points: ["Custom responsive design & development", "E-commerce & CMS solutions", "Progressive Web Apps (PWA)", "Performance optimization & maintenance"],
   },
   {
     title: "Search Engine Optimization",
+    slug: "seo",
     image: serviceSeo,
     description: "Our data-driven SEO strategies help your website rank higher in search results, driving organic traffic and qualified leads. We focus on sustainable, white-hat techniques that deliver long-term growth.",
     points: ["Technical SEO audit & optimization", "Keyword research & content strategy", "Link building & authority development", "Local SEO & Google Business optimization"],
   },
   {
     title: "Video Editing",
+    slug: "video-editing",
     image: serviceVideo,
     description: "From corporate videos to social media content, our video editing team creates compelling visual stories that engage your audience and communicate your brand message effectively.",
     points: ["Professional video editing & post-production", "Motion graphics & animation", "Social media video content", "Brand storytelling & corporate videos"],
   },
   {
     title: "Graphic Designing",
+    slug: "graphic-designing",
     image: serviceDesign,
     description: "Our creative team delivers stunning visual designs that strengthen your brand identity. From logos to marketing materials, we ensure every design element aligns with your brand vision.",
     points: ["Brand identity & logo design", "Marketing collateral & print design", "UI/UX design for web & mobile", "Social media graphics & templates"],
   },
   {
     title: "Digital Marketing",
+    slug: "digital-marketing",
     image: serviceMarketing,
     description: "We create comprehensive digital marketing campaigns that reach your target audience across multiple channels. Our strategies are backed by data and optimized for maximum ROI.",
     points: ["PPC advertising & campaign management", "Social media marketing & management", "Email marketing & automation", "Analytics & conversion optimization"],
   },
   {
     title: "Shopify Development",
+    slug: "shopify-development",
     image: serviceShopify,
     description: "Launch and grow your e-commerce business with our expert Shopify development services. We handle everything from store setup to custom theme development and app integrations.",
     points: ["Custom Shopify theme development", "Store setup & product configuration", "App integration & customization", "Performance optimization & migration"],
@@ -72,6 +78,12 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
+                  <Link
+                    to={`/services/${service.slug}`}
+                    className="mt-8 inline-block rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all hover:opacity-90"
+                  >
+                    Learn More →
+                  </Link>
                 </ScrollReveal>
               </div>
             );
